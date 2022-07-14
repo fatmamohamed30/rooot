@@ -1,0 +1,47 @@
+@mixin list-title {
+    display: grid;
+    grid-template-columns: repeat(3,12%);
+    column-gap: 3%;
+    margin-top: 7%;
+}
+@mixin  checkbtn{
+    font-size: 30px;
+    color: #fff;
+    float: right;
+    line-height: 80px;
+    position: absolute;
+    right: 20px;
+    cursor: pointer;
+    display: none;
+}
+@mixin nav-ul {    
+    text-align: center;
+    margin-top: 2%;
+    display: grid;
+    grid-template-columns: repeat(5,20%);
+    padding-left: 30%;
+
+}
+@mixin zoomnav-list {
+    width: 190px;
+    height: 150px;
+    background-color: white;
+    position: absolute;
+    top: 100%;
+    margin: 0%;
+    padding:0 ;
+    display: none;
+    animation-name: zoomup;
+    animation-duration: 1.2s;
+    text-align: center;
+    border-radius: 20px;
+}
+@mixin zoomout-list {
+    display: block;
+    color: #000;
+    height: 30px;
+    transition-duration: 1s;
+    padding-top: 3%;
+    padding-bottom: 4%;
+    text-align: center;
+}    
